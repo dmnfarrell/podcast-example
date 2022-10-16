@@ -4,7 +4,6 @@ h1 {
 
 h2 {
     font-weight: 500;
-    border-bottom: 4px solid $primary-color;
     margin-left: -.5em;
     padding: .4em 0 0 .5em;
 }
@@ -19,7 +18,7 @@ h3 {
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: 1.2em;
-    border-radius: $global-radius; 
+    border-radius: $global-radius;
 }
 
 h4 {
@@ -31,7 +30,7 @@ h5 {
     background: $secondary-color;
     margin-left: -1em;
     padding: .4em 0 .5em 1em;
-    border-radius: $global-radius; 
+    border-radius: $global-radius;
 }
 
 h6 {
@@ -96,13 +95,13 @@ blockquote {
     background: none;
     color: $dark-grey;
     border: 1px solid $primary-color;
-    border-radius: $global-radius;    
-    }    
-    
+    border-radius: $global-radius;
+    }
+
     .two-part strong:after {
     content: "\00a0";
-   
-}    
+
+}
 }
 
 

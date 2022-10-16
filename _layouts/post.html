@@ -3,10 +3,25 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+  <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+  <div> {{page.description}} </div>
+  <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}"
+    itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+    {% if page.voices %}
+     <span itemprop="voices" itemscope itemtype="http://schema.org/Person"> </span>
+      <span itemprop="name">{{ page.voices}}</span>
+    {% endif %}</p>
+
+  <div class="container center-content">
+    <div class="seven columns">
+    <audio controls>
+        <source src="{{ page.file }}" type="audio/mp3">
+    </audio>
+    </div>
+    <div class="four columns center-content">
+    <a href="{{ page.file }}" class="button u-full-height" download="{{ page.title }}">Download Now</a>
+    </div>
+   </div>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}

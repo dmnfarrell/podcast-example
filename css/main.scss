@@ -13,6 +13,8 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
+$baseurl: "{{ site.baseurl }}";
+
 /* Base files. */
 @import "base/normalize";
 @import "base/variables";

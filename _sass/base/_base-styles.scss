@@ -46,6 +46,14 @@ hr {
   border-top: 1px solid $light-grey;
 }
 
+header.banner {
+  background-image: url($baseurl + '/img/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  min-height:150px;
+}
+
 // Gradient Animation Settings
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -55,8 +63,8 @@ hr {
     -webkit-animation: LX-Background 120s linear alternate infinite;
     -moz-animation: LX-Background 120s linear alternate infinite;
     animation: LX-Background 120s linear alternate infinite;
-}    
-    
+}
+
 @-webkit-keyframes LX-Background {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
@@ -67,8 +75,18 @@ hr {
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
 }
-@keyframes LX-Background { 
+@keyframes LX-Background {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
-}    
+}
+
+// Images
+
+img.small-scaled {
+  width: 30%;
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
