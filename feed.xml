@@ -19,9 +19,8 @@
 			<itunes:name>{{ site.author }}</itunes:name>
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
-        <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/logo.jpg" />
-		<itunes:category text="Technology" />
-		<itunes:category text="Society &amp; Culture" />
+        <itunes:image href="{{ site.url }}{{ site.baseurl }}/img/logo.png" />
+		<itunes:category text="Technology" />	
         <itunes:category text="Education">
             <itunes:category text="Educational" />
         </itunes:category>
